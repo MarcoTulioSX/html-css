@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+
+    <style>
+        body{
+            font-size: 2em;
+        }
+
+        div:hover{
+            color: brown;
+        }
+
+        div > .surpresa {
+            display: none;
+        }
+
+        div:hover > .surpresa {
+            display: block;
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Testando pseudo-classes</h1>
+    <div>
+        <p>Passe o mouse aqui</p>
+        <p class="surpresa">Texto surpresa!!!</p>
+    </div>
+</body>
+</html>
